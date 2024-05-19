@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+                  * { 
+                font-family: arial;
+                box-sizing: border-box;
+                font-weight: 700;
+            }
+            .navbar {
+            height: 20px;
+        
+            color:#880808;
+            font-size: 18px;
+            padding: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: crosshair;
+            display: flex;
+            align-items: center;
+
+        }
+        .container{
+            display: flex;
+            height:400px;
+            width: 100%;
+        }
+
+        .search {
+            float: right;
+            width: 200px;
+            border: none;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .myclass {
+            height: 400px;
+            width: 50%;
+            margin-top: 50px;
+            margin-left: 20px;
+            padding: 10px;
+            background-color: #9e63be;
+            opacity: 0.75;
+            border-radius: 10px;
+
+        }
+
+        p {
+            font-size: 28px;
+
+        }
+
+        body{
+            background-image:url(background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: contain;
+         
+        }
+
+        a {
+            margin-left: 70px;
+            font-size: larger;
+        }
+
+        .scroll {
+            height: 40px;
+            padding: 20px;
+           font-size: 16.5px;
+           color:white;
+        }
+        .btn{
+            border:2px solid transparent;
+            outline: none;
+            transition: all;
+            margin-left: 170px;
+        }
+        .btn:hover {
+         border: 2px solid white;
+        }
+        .search-input{
+            display: flex;
+            margin-left: 100px;
+            height: 40px;
+        }
+        .search-button{
+            border: none;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            background-color: darkgoldenrod;
+            text-align: center;
+        }
+        .class{
+            height: 400px;
+            width: 50%;
+            margin-top: 100px;
+            margin-left: 20px;
+            padding: 10px;
+            background-color: #9e63be;
+            opacity: 0.75;
+            border-radius: 10px;
+        }
+        .class1{
+            height: 400px;
+            width: 50%;
+            margin-top: 60px;
+            margin-left: 20px;
+            padding: 10px;
+            background-color: #9e63be;
+            opacity: 0.75;
+            border-radius: 10px;
+        }
+        .video-class{
+            position: absolute;
+            right: 0;
+            bottom:0;
+            z-index:-1;
+            height: 100%;
+            width:100%;
+            object-fit: cover;
+        }
+        .news{
+            background-color:#E95793;
+            opacity: 0.8;
+            width: 400px;
+            margin-left: 150px;
+            margin-right: 100px;
+            height: 580px;
+            margin-top: 200px;
+            border: none;
+            background-repeat: no-repeat;
+            background-size: contain;
+            text-align: center;
+            border-radius: 10px;
+            
+        }
+        .image{
+            border-radius: 10px;
+            float:right;
+            margin-right: 30px;
+        
+        }
+        .font{
+            padding-bottom:20px;
+            height: 100px;
+            text-align: left;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .first{
+            height: 90px;
+        }
+        .color{
+    
+        }
+        .sassy{
+            font-size: larger;
+            height: 50px;
+            width: 270px;
+            background-color:#aa96da;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .second{
+            height: 90px;
+            text-align: left;
+            margin-left: 10px;
+            font-size: large;
+        }
+        .hr{
+            height: 50px;
+        }
+        footer{
+            background-color: #111;
+            width: 100%;
+           
+        }
+        .footer-class{
+            display: flex;
+            justify-content: center;
+            padding: 70px ;
+           
+        }
+        .footer-nav{
+            color: white;
+            display: flex;
+            justify-content: center;
+            opacity: 0.75;
+        }
+        .footer-nav:hover{
+            opacity: 1;
+        }
+        .footer-class a{
+            background-color: white;
+            color: #000;
+            margin: 10px;
+            width: 30px;
+            border-radius: 50%;
+            padding: 5px;
+
+        }
+        .copyright{
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+        }
+        .copyright p{
+            color: white;
+            font-size: large;
+        }
+        .designer{
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            margin: 0px 5px;
+        }
+        .feedback-button {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .temp{
+            font-size: 50px;
+        }
+        .location{
+            color: white;
+        }
+        button{
+            border-top-right-radius: 10px;
+            border: none;
+            border-bottom-right-radius: 10px;
+        }
+        .weathericon{
+            margin-left: 300px;
+           
+        }
+        .space{
+            height: 150px;
+        }
+        .arpit{
+            color: white;
+            margin-left: 150px;
+           
+        }
+        h3{
+            font-size: 25px;
+        }
+       .rain{
+        margin-left: 100px;
+        margin-top: 70px;
+        height: 400px;
+        width: 400px;
+        background-color: #9e63be;
+        opacity: 0.8;
+        border-radius: 12px;
+
+
+       }
+       ul{
+        margin-top: 50px;
+       }
+       .main{
+        display: flex;
+       }
+
+    </style>
+
+    
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  <title>welcome to weather.in</title>
+    <script src="https://kit.fontawesome.com/342b0b5926.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   
+ 
+    <!--this is for header-->
+    <div class="navbar">
+        <a><div class="color"><div class="width"><h1 class="location"><i class="fa-solid fa-location-dot"></i><b> Your Location</h1></div></div></b>
+        <a style="margin-left: 250px; color: black;font-size: 20px; cursor: auto;" ><div class="sassy"><b>CLI<font color="#610C9F">MA </font>TR<font color="610C9F">AC</font>KER.<font color="610C9F">IN</font></b></div></a>
+       <div class="search-input"><select class="search-button"><option>ALL</option><option><a href="today.html">TODAY</a></option><option>HOURLY</option><option>DAILY</option><option>RADAR</option><option value="MONTHLY"></option>
+       <option value=""></option></select>
+        <input  class="search" placeholder="search any place/city"><button><i id="button" style= "padding: 10px;background-color:white;border-top-right-radius:10px;color:black;border-bottom-right-radius: 10px;" class="fa-solid fa-magnifying-glass"></i></button></div>
+
+
+
+        <!--this is for navigation bar-->
+    </div>
+    <div class="scroll">
+        <a href="today.html" class="btn"><strong>TODAY</a>
+        <a href="hourly.html" class="btn">HOURLY</a>
+        <a href="daily.html"  class="btn">DAILY</a>
+        <a href="radar.html" class="btn">MAP</a>
+        <a class="btn">HEALTH&ACTIVITIES</strong></a>
+
+
+
+    </div>
+    
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <hr>
+    <div class="main">
+        <div class="rain"><h1 class="arpit">RAIN</h1>
+        <ul><li><h3>Freshen Up Your Space</h3></li>
+        <li><h3>Have a Styling Session</h3></li>
+        <li><h3>Host a Chopped-Style Cooking Competition</h3></li>
+        <li><h3>Pick Up a New Skill</li></h3>
+        <li><h3>Give Yourself Nail Manicure</li></h3></ul>
+        </div>
+
+
+        <div class="rain"><h1 class="arpit">Sunny</h1>
+            <ul><li><h3>Organise a treasure hunt.</h3></li>
+            <li><h3>Play Hide-n-Seek</h3></li>
+            <li><h3>Grow your own tomatoes.</h3></li>
+            <li><h3>Teach your dog some tricks..</li></h3>
+            <li><h3>Cycling</li></h3></ul>
+            </div>
+
+            <div class="rain"><h1 class="arpit">Clouds</h1>
+                <ul><li><h3>Cloud Watching</h3></li>
+                <li><h3> Read A Book About Clouds</h3></li>
+                <li><h3>Play board games</h3></li>
+                <li><h3>Bake</li></h3>
+                <li><h3>Yoga</li></h3></ul>
+                </div>
+    </div>
+</body>
+</html>
