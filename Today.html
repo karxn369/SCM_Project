@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="icon" href="C:\VSS\icon.jpg" type="icon">
+    
+    <style>
+            * { 
+                font-family: arial;
+                box-sizing: border-box;
+                font-weight: 700;
+            }
+            .navbar {
+            height: 20px;
+        
+            color:#880808;
+            font-size: 18px;
+            padding: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: crosshair;
+            display: flex;
+            align-items: center;
+
+        }
+        .container{
+            display: flex;
+            height:400px;
+            width: 100%;
+        }
+
+        .search {
+            float: right;
+            width: 200px;
+            border: none;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .myclass {
+            height: 400px;
+            width: 50%;
+            margin-top: 50px;
+            margin-left: 20px;
+            padding: 10px;
+            background-color: #9e63be;
+            opacity: 0.75;
+            border-radius: 10px;
+
+        }
+
+        p {
+            font-size: 28px;
+
+        }
+
+        body{
+            background-image:url(background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: contain;
+         
+        }
+
+        a {
+            margin-left: 70px;
+            font-size: larger;
+        }
+
+        .scroll {
+            height: 40px;
+            padding: 20px;
+           font-size: 16.5px;
+           color:white;
+        }
+        .btn{
+            border:2px solid transparent;
+            outline: none;
+            transition: all;
+            margin-left: 170px;
+        }
+        .btn:hover {
+         border: 2px solid white;
+        }
+        .search-input{
+            display: flex;
+            margin-left: 100px;
+            height: 40px;
+        }
+        .search-button{
+            border: none;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            background-color: darkgoldenrod;
+            text-align: center;
+        }
+        .class{
+            height: 400px;
+            width: 50%;
+            margin-top: 100px;
+            margin-left: 20px;
+            padding: 10px;
+            background-color: #9e63be;
+            opacity: 0.75;
+            border-radius: 10px;
+        }
+        .class1{
+            height: 400px;
+            width: 50%;
+            margin-top: 60px;
+            margin-left: 20px;
+            padding: 10px;
+            background-color: #9e63be;
+            opacity: 0.75;
+            border-radius: 10px;
+        }
+        .video-class{
+            position: absolute;
+            right: 0;
+            bottom:0;
+            z-index:-1;
+            height: 100%;
+            width:100%;
+            object-fit: cover;
+        }
+        .news{
+            background-color:#E95793;
+            opacity: 0.8;
+            width: 400px;
+            margin-left: 150px;
+            margin-right: 100px;
+            height: 580px;
+            margin-top: 200px;
+            border: none;
+            background-repeat: no-repeat;
+            background-size: contain;
+            text-align: center;
+            border-radius: 10px;
+            
+        }
+        .image{
+            border-radius: 10px;
+            float:right;
+            margin-right: 30px;
+        
+        }
+        .font{
+            padding-bottom:20px;
+            height: 100px;
+            text-align: left;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .first{
+            height: 90px;
+        }
+        .color{
+    
+        }
+        .sassy{
+            font-size: larger;
+            height: 50px;
+            width: 270px;
+            background-color:#aa96da;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .second{
+            height: 90px;
+            text-align: left;
+            margin-left: 10px;
+            font-size: large;
+        }
+        .hr{
+            height: 50px;
+        }
+        footer{
+            background-color: #111;
+            width: 100%;
+           
+        }
+        .footer-class{
+            display: flex;
+            justify-content: center;
+            padding: 70px ;
+           
+        }
+        .footer-nav{
+            color: white;
+            display: flex;
+            justify-content: center;
+            opacity: 0.75;
+        }
+        .footer-nav:hover{
+            opacity: 1;
+        }
+        .footer-class a{
+            background-color: white;
+            color: #000;
+            margin: 10px;
+            width: 30px;
+            border-radius: 50%;
+            padding: 5px;
+
+        }
+        .copyright{
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+        }
+        .copyright p{
+            color: white;
+            font-size: large;
+        }
+        .designer{
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            margin: 0px 5px;
+        }
+        .feedback-button {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+       
+        .location{
+            color: white;
+        }
+        button{
+            border-top-right-radius: 10px;
+            border: none;
+            border-bottom-right-radius: 10px;
+        }
+        .weathericon{
+            margin-left: 300px;
+           
+        }
+        .today{
+            display: flex;
+            height: 500px;
+            justify-content: space-evenly;
+            
+        }
+        .div1{
+            
+            height: 350px;
+            border-radius: 10px;
+            margin-top: 50px;
+            width: 400px;
+            background-color: #aa96da;
+            opacity: 0.7;
+            
+            
+        }
+        .div1{
+           text-align: justify;
+           text-transform: capitalize;
+           
+        }
+     .div1 h1{
+        text-align: center;
+       
+     }
+     .div1 h2{
+        margin-left: 20px;
+        padding-top: 10px;
+        color: white;
+     }
+     
+
+       
+
+    </style>
+    <title>welcome to weather.in</title>
+    <script src="https://kit.fontawesome.com/342b0b5926.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   
+ 
+    <!--this is for header-->
+    <div class="navbar">
+        <a><div class="color"><div class="width"><h1 class="location"><i class="fa-solid fa-location-dot"></i><b> Your Location</h1></div></div></b>
+        <a style="margin-left: 250px; color: black;font-size: 20px; cursor: auto;" ><div class="sassy"><b>CLI<font color="#610C9F">MA </font>TR<font color="610C9F">AC</font>KER.<font color="610C9F">IN</font></b></div></a>
+       <div class="search-input"><select class="search-button"><option>ALL</option><option>TODAY</option><option>HOURLY</option><option>DAILY</option><option>RADAR</option><option value="MONTHLY"></option>
+       <option value=""></option></select>
+        <input  class="search" placeholder="search any place/city"><button><i id="button" style= "padding: 10px;background-color:white;border-top-right-radius:10px;color:black;border-bottom-right-radius: 10px;" class="fa-solid fa-magnifying-glass"></i></button></div>
+
+
+
+        <!--this is for navigation bar-->
+    </div>
+    <div class="scroll">
+        <a href="today.html" class="btn"><strong>TODAY</a>
+        <a href="hourly.html" class="btn">HOURLY</a>
+        <a href="daily.html"  class="btn">DAILY</a>
+        <a href="radar.html" class="btn">MAP</a>
+       
+        <a href="health&activties.html" class="btn">HEALTH&ACTIVITIES</strong></a>
+
+
+
+    </div>
+    <hr>
+    <a href="feedback.html">  <button class="feedback-button">Feedback</button>
+    </a>
+    <div class="today">
+        <div class="div1"><div class="heading"><h1>TEMPERATURE</h1></div>
+        <hr>
+        <h2 class="temp">temp:</h2>
+        <h2 class="feel">feels_like:</h2>
+        <h2 class="tempmin">temp_min:</h2>
+        <h2 class="temp_max">temp_max:</h2>
+        
+        </div>
+        <div class="div1"> 
+            <h1>humidity info</h1>
+            <hr>
+            <h2 class="humidity">humidity:</h2>
+        <h2 class="visibility">visibility:</h2>
+    <h2 class="condition">condition:</h2>
+<h2 class="sunset">sunset:</h2></div>
+        <div class="div1"><h1>wind info</h1>
+            <hr>
+            <h2 class="wind">wind speed:</h2>
+            <h2 class="wind_deg">wind deg:</h2>
+            <h2 class="timezone">timezone:</h2>
+        
+        </div>
+    </div>
+   
+    <footer>
+        <div class="footer-class">
+            <a href="https://instagram.com/arpitxvermaa?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://whatsapp.com/dl/"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://x.com/arnavsaini2005?s=11"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://napkforpc.com/apk/com.google.android.apps.plus/"><i class="fa-brands fa-google-plus"></i></a>
+            <a href="https://youtu.be/pFvWwFua6mw?si=mKEbqhjlI0gfN9Ms"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footer-nav">
+           <a href="final project.html"><ul>Home</ul></a>
+           <a href="bootstrap.html"><ul>Contact</ul></a>
+            <a href="aboutus.html"><ul>About us</ul></a>
+           <a href="https://weather.com/en-IN/india/news"><ul>News</ul></a>
+           <a href="our founders.html"><ul>Our Founders</ul></a>
+        </div>
+        <div class="copyright">
+            <p>Copyright&copy;2023;Designed by<span class="designer">Arpit;Arnav;Arshdeep</span></p>
+        </div>
+    </footer>
+    <script>
+        const apiKey="519cf5ee243b62ca82319305c0beb384";
+        const apiUrl="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+        const searchbtn=document.getElementById("button");
+        const searchbox=document.querySelector(".search");
+        const weathericon=document.querySelector(".weathericon");
+        async function checkweather(city){
+            const response=await fetch(apiUrl+ city +&appid=${apiKey});
+            var data=await response.json();
+            setInterval(()=>{
+                let d=new Date();
+                document.querySelector(".time").innerHTML=d.toLocaleTimeString()
+            },1000)
+               
+            
+            console.log(data);
+            document.querySelector(".temp").innerHTML= "temp: " +  data.main.temp + "°c";
+            document.querySelector(".feel").innerHTML="feels like:" + data.main.feels_like + "°c";
+            document.querySelector(".tempmin").innerHTML="Min temp:" + data.main.temp_min +"°c";
+            document.querySelector(".temp_max").innerHTML="Max temp:" + data.main.temp_max +"°c";
+            document.querySelector(".wind").innerHTML="Wind Speed:" + data.wind.speed + "Km/hr";
+            document.querySelector(".location").innerHTML="📌 " +  data.name + "," +  data.sys.country;
+            document.querySelector(".humidity").innerHTML="Humidity:" + data.main.humidity + "%";
+            document.querySelector(".visibility").innerHTML="Visibility:" + data.visibility + "m";
+            document.querySelector(".condition").innerHTML="Condition:" + data.weather[0].main;
+            document.querySelector(".sunset").innerHTML="Sunset:" + data.sys.sunset;
+            document.querySelector(".wind_deg").innerHTML=" Wind Deg:" + data.wind.deg;
+            document.querySelector(".timezone").innerHTML="Timezone:" + data.timezone;
+            if (data.weather[0].main== "Clouds"){
+                weathericon.src="clouds.png"
+            }
+            else if(data.weather[0].main=="Clear"){
+                weathericon.src="clear.png"
+            }
+            else if(data.weather[0].main=="Rain"){
+                weathericon.src="rain.png"
+            }
+            else if(data.weather[0].main=="Drizzle"){
+                weathericon.src="drizzle.png"
+            }
+            else if(data.weather[0].main=="Mist"){
+                weathericon.src="mist.png"
+            }
+            else if(data.weather[0].main=="Haze"){
+                weathericon.src="snow.png"
+            }
+            else if(data.weather[0].main="Smoke"){
+                weathericon.src="smoke.png"
+            }
+
+            
+            
+
+        }
+        searchbtn.addEventListener("click",()=>{
+            checkweather(searchbox.value);
+            
+        })
+        
+
+    </script>
+</body>
